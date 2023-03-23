@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body{
+    background: rgba(128, 128, 128, 0.116);
+    background-size: cover;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 50px;
+    box-shadow: -2px 10px 15px;
+}
+
+.navbar{
+    background: gold;
+    height: 300px;
+    position: absolute;
+    right: 15px;
+    top: 25%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navbar>ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.profile-menu{
+    flex: 1.5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.profile-picture{
+    flex: 2;
+}
+
+.profile-picture>img{
+    width:256px; 
+    height: 250px;
+}
+
+.black-top{
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0.7;    
+}
+
+.black-bottom{
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+/* .vertical_dotted_line
+{
+    border-left: 1px dotted black;
+    height: 30px;
+    z-index:4px;
+}  */
+
+.menu{
+    background: gold;
+    flex: 10;
+}
+
+.menu>ul{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+a:hover, a::after{
+    color: white;
+}
+
+.body{
+    flex: 5;
+    height: 100%;
+    background: rgb(241, 240, 240);
+    padding: 50px 70px;
+    box-sizing: border-box;
+}
+
+.title{
+    border: 1px dashed black;
+    text-align: center;
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.portfolios{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    margin-top: 15px;
+}
+
+.images>img{
+    object-fit: contain;
+    height: 200px;
+}
+

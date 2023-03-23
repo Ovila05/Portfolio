@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body{
+    background: rgba(128, 128, 128, 0.116);
+    background-size: cover;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 50px;
+    box-shadow: -2px 10px 15px;
+}
+
+.navbar{
+    background: gold;
+    height: 300px;
+    position: absolute;
+    right: 15px;
+    top: 25%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navbar>ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.profile-menu{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.profile-picture{
+    flex: 2;
+}
+
+.profile-picture>img{
+    width:256px; 
+    height: 250px;
+}
+
+.menu{
+    background: gold;
+    flex: 10;
+}
+
+.menu>ul{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a:hover, a::after{
+    color: white;
+}
+
+.body{
+    flex: 5;
+    height: 100%;
+    background: rgb(241, 240, 240);
+    padding: 50px 70px;
+    box-sizing: border-box;
+}
+
+.title{
+    border: 1px dashed black;
+    text-align: center;
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.intro{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.name{
+    font-weight: 800;
+}
+
+.top-div>p{
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: smaller;
+    line-height: 1.2rem;
+}
+
+.bottom-div{
+    margin-top: 30px;
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.left-side{
+    box-sizing: border-box;
+    flex: 4;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.box{
+    background: black;
+    box-sizing: border-box;
+    color: white;      
+    padding: 10px;
+}
+
+.box1, .box2{
+    border-bottom: 1px solid white;
+}
+
+.box1, .box3{
+    border-right: 1px solid white;
+}
+
+.box-item{
+    padding: 30px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-header{
+    box-sizing: border-box;
+    letter-spacing: 3px;
+    color: gold;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.box-body{
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.right-side{
+    box-sizing: border-box;
+    flex: 2;
+    margin-left: 50px;
+}
+
+.illustration{
+    flex: 1;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.body-brief{
+    flex: 2;
+}
+
+.body-brief>h3{
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.body-brief>p{
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.web-design, .web-dev{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
